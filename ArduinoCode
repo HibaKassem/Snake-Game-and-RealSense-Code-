@@ -451,6 +451,23 @@ void food( int eaten )
   
 }
 
+
+void lose_game_print(){
+
+  FastLED.clear();
+  int i=0;
+
+  for(i=0; i<(sizeof(arr_a) / sizeof(arr_a[0]));i++){
+
+     leds[arr_aa[i]].setRGB(30,144,255);
+
+  }
+
+  FastLED.show();
+  delay(4000);
+
+}
+
 void death()
 {
     snakeSize = 20;
